@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Mata-w-Love", page_icon="🧊", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="MOLT", page_icon="🧊", layout="wide", initial_sidebar_state="collapsed")
 
 
 ###Model input and assumptions/ streamlit sidebar###
@@ -391,7 +391,7 @@ op_model_menu = ['Income statement', 'Balance sheet', 'Cash flow statement']
 
 
 
-st.title("Mata Business Plan")
+st.title("MOLT Business Plan")
 
 main_select = st.selectbox('Main menu', main_select_menu)
 
