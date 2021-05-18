@@ -1,10 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from PIL import Image
 
-st.set_page_config(page_title="MOLT", page_icon="🧊", layout="wide", initial_sidebar_state="collapsed")
-image = Image.open('mate gourd 1.jpg')
+st.set_page_config(page_title="Basic Financial Model", page_icon="🧊", layout="wide")
 
 ###Model input and assumptions/ streamlit sidebar###
 
@@ -387,13 +385,12 @@ fcf_df = df_cf[['free cash flow']]
 ###streamlit main body code###
 
 
-main_select_menu = ['Dashboard', 'Operating model', 'Valuation', 'Sensitivities']
+main_select_menu = ['Dashboard', 'Operating model', 'Valuation']
 op_model_menu = ['Income statement', 'Balance sheet', 'Cash flow statement']
 
 
 
-st.title("MOLT Business Plan")
-st.image(image)
+st.title("Example of a Basic Financial Model")
 
 
 main_select = st.selectbox('Main menu', main_select_menu)
@@ -444,8 +441,4 @@ elif main_select == 'Valuation':
   st.subheader('Business valuation')
   st.subheader(valuation_s)
   
-
-
-elif main_select == 'Sensitivities':
-  st.subheader("Monte-carlo sensitivity analysis")
 
