@@ -390,7 +390,7 @@ op_model_menu = ['Income statement', 'Balance sheet', 'Cash flow statement']
 
 
 
-st.title("Example of a Basic Financial Model")
+st.title("Basic Financial Model")
 
 
 main_select = st.selectbox('Main menu', main_select_menu)
