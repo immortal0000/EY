@@ -390,8 +390,8 @@ op_model_menu = ['Income statement', 'Balance sheet', 'Cash flow statement']
 
 
 
-st.title("EY Toy Financial Model")
-st.subheader("by Khalid AlSaraj")
+st.title("Financial Model & Valuation")
+st.subheader("Made for EY by Khalid AlSaraj")
 
 
 main_select = st.selectbox('Main menu', main_select_menu)
