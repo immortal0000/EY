@@ -399,7 +399,7 @@ main_select = st.selectbox('Main menu', main_select_menu)
 
 if main_select == 'Select view':
   st.subheader("Disclaimer")
-  st.write("This Toy financial model and valuation has been developed for EY to showcase the development of financial models using Python code rather than typical Excel based models. By Accessing the application, you agree that you will not use it for other purposes without prior consent ")
+  st.write("This Toy financial model and valuation has been developed for EY to showcase the development of financial models using Python code rather than typical Excel based models. By accessing the application, you agree that you will not use it for other purposes without prior consent ")
 
 
 
