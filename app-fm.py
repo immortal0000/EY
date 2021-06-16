@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Basic Financial Model", page_icon="🧊", layout="wide")
+st.set_page_config(page_title="EY Financial Model", page_icon="🧊", layout="wide", initial_sidebar_state="auto")
 
 ###Model input and assumptions/ streamlit sidebar###
 
@@ -385,17 +385,25 @@ fcf_df = df_cf[['free cash flow']]
 ###streamlit main body code###
 
 
-main_select_menu = ['Dashboard', 'Operating model', 'Valuation']
+main_select_menu = ['Select view','Dashboard', 'Operating model', 'Valuation']
 op_model_menu = ['Income statement', 'Balance sheet', 'Cash flow statement']
 
 
 
-st.title("Basic Financial Model")
+st.title("EY Toy Financial Model")
+st.subheader("by Khalid AlSaraj")
 
 
 main_select = st.selectbox('Main menu', main_select_menu)
 
-if main_select == 'Dashboard':
+
+if main_select == 'Select view':
+  st.subheader("Disclaimer")
+  st.write("This Toy financial model and valuation has been developed for EY to showcase the development of financial models using Python code rather than typical Excel based models. By Accessing the application, you agree that you will not use it for other purposes without prior consent ")
+
+
+
+elif main_select == 'Dashboard':
   st.subheader("Dashboard")
 
   col1, col2 = st.beta_columns(2)
